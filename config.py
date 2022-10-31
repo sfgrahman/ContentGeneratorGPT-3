@@ -1,6 +1,7 @@
-import os
+from decouple import config
+
 ## Enter your Open API Key here
-OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
+OPENAI_API_KEY = config('OPENAI_API_KEY')
 
 class Config(object):
     DEBUG = True
